@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Pangolin&display=swap'); /* As fontes que quero usar */
+
+* { /* o asterisco seleciona TODO o html */
+  margin: 0;                                                                    /*espaço ao redor da caixa */
+  padding: 0;                   /* tirando as coisas padrões do google */        /*espaço dentro da caixa */
+  box-sizing: border-box;
+  text-decoration: none;
+  zoom: 91.7%;
+}
+
+body {
+  font-size: 100%;
+  background: linear-gradient(to left, #6e529d 0%,#d97b93 100%);
+}
+
+.cabecalho { 
+  display: flex;       /* tipo umas caixas */
+  flex-direction: row;    /* ficar uma linha um ao lado do outro ele faz isso automatico mas as vezes é bom por/especificar */
+  align-items: center;   /*alinhar no meio */
+  justify-content: space-around;   /*espaçar os elementos */
+  padding: 5px;    /*espaço da borda de cima */
+
+}
+.imagem-do-canto {
+  height: 72px; 
+}
+.botoes-do-cabecalho {
+  display: flex; 
+  gap: 80px;    /* afastamento entre os botões */
+
+}
+.botao-cabecalho {
+  font-family: 'Amatic SC', cursive;  /* fonte a ser usada */
+  color: white;      /*cor da fonte */
+  font-weight: 400;  /*grossura da fonte */
+  font-size: 31px; /*tamanho da fonte */
+}
+.botao-cabecalho:hover {     
+  transform: scale(1.1);     /*aumentar na hora que o mouse passa por cima */
+}
+.meio-da-página-conteúdo {
+  margin-bottom: 48px;  /*margem entre o meio e o rodapé */
+  border-top: 0.4px dashed white;      /*linha no topo tamanho tipo e cor */
+}
+.desenho1  {
+  display:flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.parte-de-baixo-do-meio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 48px;
+}
+.titulo-de-baixo {
+  border-top: 0.4px dashed white;     /*linha*/
+  padding-top: 45px;     /* espaço dele pra cima entre a linha e o titulo */
+  font-family: 'Pangolin', cursive; 
+  color: white;
+  font-size: 45px;
+  font-weight: 300;
+  margin-bottom: 16px;  /*espaço dele pra baixo */
+}
+.texto-de-baixo {
+  font-family: 'Amatic SC', cursive;
+  font-weight: 400;
+  font-size: 30px;
+  color: white;
+  
+}
+.rodapé {
+  padding: 32px;
+  border-top: 0.4px dashed white;
+}
+.rodapé-lojel-ímagem {
+  height: 68px;     /*diminuir*/
+  display: block;        /* centralizar sem flex box */
+  margin: 0 auto;
+}
